@@ -867,7 +867,7 @@ footer .wrapper:after {
 
     .status-box:nth-child(2), .status-box:nth-child(4) {
         border-left: 1px solid #cccccc;
-        margin-top: 50px;
+        margin-top: 2em;
     }
 
     .testmony-box {
