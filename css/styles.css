@@ -1080,7 +1080,7 @@ footer .wrapper:after {
     }
 
     #blog-container p {
-        margin-bottom: 1em;
+        margin-bottom: 2em;
         font-size: 1em;
     }
 
@@ -1088,10 +1088,6 @@ footer .wrapper:after {
         font-size: 1.5em;
         margin-bottom: 15px;
     }
-
-    .light-btn a {
-	    margin-top: 1em;
-	}
 	
     .footer-box {
         display: block;
