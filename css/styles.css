@@ -1,0 +1,1115 @@
+/*----------------------------------------------------------------------------*/
+/*-----------------------------------GERAL------------------------------------*/
+/*----------------------------------------------------------------------------*/
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+    margin: 0;
+    color: #444444;
+}
+
+.container {
+    max-width: 1920px;
+    width: 100%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper {
+    max-width: 1100px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*----------------------------------------------------------------------------*/
+/*-------------------------------PAGINA INICIAL-------------------------------*/
+/*----------------------------------------------------------------------------*/
+
+/* HEADER */
+
+header {
+    position: relative;
+    top: 0;
+    height: auto;
+    width: 100%;
+}
+
+/*ESCONDER NO DESKTOP*/
+
+.nav-container .iconify {
+    display: none;
+}
+
+/* NAVBAR */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    z-index: 1;
+    background-color: #25477A;
+    border-bottom: 1px solid #cccccc;
+}
+
+nav:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.nav-container {
+    max-width: 1100px;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#logo {
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.nav-container ul {
+    float: right;
+    height: 70px;
+    line-height: 70px;
+    margin: 0;
+}
+
+.nav-container li {
+    list-style: none;
+    float: left;
+    margin: 0 15px;
+}
+
+.nav-container li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.5s;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.nav-container li a:hover {
+    color: #25477A;
+    background-color: #ffffff;
+}
+
+/* BANNER PRINCIPAL */
+
+#main-banner {
+    background: url('../img/bannerheader.png') no-repeat;
+    background-size: cover;
+    background-position: 0 100%;
+    position: relative;
+    margin-top: 70px;
+}
+
+#search-form {
+    position: relative;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 12em;
+    padding-bottom: 13em;
+    text-align: center;
+}
+
+#search-form h1 {
+    text-transform: uppercase;
+    font-size: 36px;
+    color: #ffffff;
+}
+
+#search-form p {
+    color: #ffffff;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#search-form input, #search-form select {
+    background-color: #ffffff;
+    border-radius: 5px;
+    border-color: transparent;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+#search-form input[type=submit] {
+    background-color: #0165fa;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#search-form input[type=submit]:hover {
+    background-color: #25477A;
+}
+
+/* SEÇÃO DE ÚLTIMAS VAGAS */
+
+#lastjobs-container {
+    text-align: center;
+    padding: 100px 0;
+}
+
+#lastjobs-container h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+#lastjobs-container ul {
+    padding: 0;
+    border: 1px solid #25477A;
+    border-radius: 10px;
+}
+
+#lastjobs-container li {
+    list-style: none;
+    text-align: left;
+    border-bottom: 1px solid #25477A;
+    height: 80px;
+    position: relative;
+}
+
+#lastjobs-container li:last-child {
+    border: none;
+}
+
+.clickarea {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* SEÇÃO DE ÚLTIMAS VAGAS: IMAGENS DAS EMPRESAS */
+
+.company-box {
+    display: inline-block;
+    width: 50%;
+    position: relative;
+    padding-left: 2%;
+}
+
+.company-box img {
+    width: 100px;
+    margin-top: 2.5px;
+}
+
+.company-info {
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 10px;
+    text-align: left;
+    position: absolute;
+}
+
+.company-info h3 {
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.company-info p {
+    font-weight: bold;
+}
+
+/* SEÇÃO DE ÚLTIMAS VAGAS: LOCALIZAÇÃO DAS EMPRESAS */
+
+.locality {
+    color: #444444;
+    display: inline-block;
+    width: 25%;
+    position: absolute;
+    height: 100%;
+    line-height: 80px;
+}
+
+.locality img, .locality p {
+    display: inline-block;
+}
+
+.locality img {
+    margin-right: 5px;
+    width: 14px;
+}
+
+/* SEÇÃO DE ÚLTIMAS VAGAS: TIPOS DE TRABALHO */
+
+.job-type {
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    padding-top: 25px;
+    right: 1%;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.job-type span {
+    display: block;
+    margin-left: 30%;
+    width: 60%;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.clt {
+    background-color: #c79a85;
+}
+
+.pj {
+    background-color: #79c980;
+}
+
+.homeoffice {
+    background-color: #9e6ac4;
+}
+
+/* SEÇÃO DE ÚLTIMAS VAGAS: BOTÃO VEJA MAIS VAGAS */
+
+.btnjobs-container {
+    margin-top: 50px;
+}
+
+.btn-jobs {
+    text-transform: uppercase;
+    background-color: #0165fa;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.btn-jobs:hover {
+    background-color: #25477A;
+}
+
+/* SEÇÃO DE ENVIAR VAGAS */
+
+#sendjobs-container {
+    background: url('../img/bannerenviarvagas.png') no-repeat;
+    background-size: cover;
+    padding: 8em 0;
+}
+
+#sendjobs-container h2, #sendjobs-container p {
+    width: 520px;
+    color: #ffffff;
+}
+
+#sendjobs-container h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#sendjobs-container p {
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.light-btn {
+    background-color: #0165fa;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.light-btn:hover {
+    background-color: #25477A;
+}
+
+/* SEÇÃO DE ESTATÍSTICAS */
+
+#status-container {
+    text-align: center;
+    padding: 5em 0;
+}
+
+.title-center {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.p-center {
+    width: 80%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+}
+
+.status-box {
+    display: inline-block;
+    text-align: center;
+    width: 24.5%;
+    margin-top: 80px;
+    border-left: 1px solid #cccccc;
+    height: 100px;
+}
+
+.status-box:first-child {
+    border-left: none;
+}
+
+.status-qtd {
+    font-size: 36px;
+}
+
+.status-text {
+    font-size: 18px;
+}
+
+/* SEÇÃO DE DEPOIMENTOS */
+
+#testmony-container {
+    background: url('../img/bannerdepoimentos.png') no-repeat;
+    background-size: cover;
+    padding: 5em 0;
+}
+
+#testmony-container h2, #testmony-container p {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#testmony-container h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.testmony-box {
+    display: inline-block;
+    width: 24.5%;
+    text-align: center;
+}
+
+#testmony-container .testmony-box .testmony-msg {
+    background-color: #ffffff;
+    color: #444444;
+    border-radius: 10px;
+    padding: 20px;
+    width: 60%;
+    font-size: 14px;
+    position: relative;
+    margin: 35px auto;
+    font-style: italic;
+}
+
+.testmony-msg:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #ffffff;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testmony-box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+}
+
+.testmony-name {
+    font-weight: bold;
+}
+
+/* SEÇÃO DO BLOG */
+
+#blog-container {
+    text-align: center;
+    padding: 5em 0;
+}
+
+#blog-container .p-center {
+    margin-bottom: 60px;
+}
+
+.article-box {
+    display: inline-block;
+    width: 30%;
+    padding: 0 1.25%;
+    text-align: left;
+}
+
+.article-box img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.article-box h4 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.article-box h4 a {
+    text-decoration: none;
+    color: #444444;
+}
+
+.article-date {
+    font-size: 12px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.article-resume {
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.article-btn {
+    background-color: #0165fa;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.article-btn:hover {
+    background-color: #25477A;
+}
+
+/* RODAPÉ */
+
+footer {
+    background-color: #25477A;
+    padding-top: 2em;
+    bottom: 40px;
+    border-top: 5px solid #ffffff;
+}
+
+footer h2, footer p, footer a, footer span {
+    color: #ffffff;
+} 
+
+footer h2 {
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer li {
+    list-style: none;
+}
+
+.footer-box {
+    width: 30%;
+    padding: 1.5%;
+    float: left;
+}
+
+footer .wrapper:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.company-footer {
+    width: 80%;
+}
+
+.company-footer p {
+    margin-bottom: 20px;
+}
+
+.company-footer img {
+    margin-bottom: 15px;
+    width: 150px;
+}
+
+.footer-list li {
+    margin-bottom: 15px;
+}
+
+.footer-list li:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.articles-footer {
+    width: 80%;
+}
+
+.footer-list.footer-article-list span {
+    display: block;
+    float: none;
+}
+
+.footer-img {
+    height: 30px;
+    margin-right: 10px;
+    float: left;
+}
+
+.footer-list li span {
+	float: left;
+	height: 30px;
+	line-height: 30px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #ffffff;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+	font-weight: 400;
+	padding: 10px 0;   
+    text-align: center;
+}
+
+/*----------------------------------------------------------------------------*/
+/*--------------------------PAGINA DE ENCONTRAR VAGAS-------------------------*/
+/*----------------------------------------------------------------------------*/
+
+
+#lastjobs-container #buscarvagas-h1 {
+    margin-top: 1em;
+}
+
+#findjobs #search-form {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    width: 100%;
+    background-color: #25477A;
+    border-top: 5px solid #0165fa;
+}
+
+#search-form input, #search-form select {
+    width: 20%;
+}
+
+#findjobs #search-form input[type=submit]:hover {
+    border: 2px solid #ffffff;
+}
+
+#findjobs #lastjobs-container ul {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-top: 0;
+}
+
+#type-filter {
+    text-align: left;
+}
+
+#findjobs #type-filter ul {
+    margin: 0;
+    border-radius: 0;
+    background-color: #ffffff;
+    border: 0;
+    border-right: 1px solid #25477A;
+}
+
+#findjobs #type-filter ul li {
+    display: inline-block;
+    width: 23.5%;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: none;
+    border-left: 1px solid #25477A;
+    padding-left: 1%;
+}
+
+/*----------------------------------------------------------------------------*/
+/*---------------------------PAGINA DE ENVIAR VAGAS---------------------------*/
+/*----------------------------------------------------------------------------*/
+
+.sendjobs #sendjobs-container {
+    margin-top: 80px;
+    background: none;
+    padding: 5em 0 7em 0;
+}
+
+.sendjobs h1 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.input-box {
+    margin-bottom: 2em;
+    width: 60%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-box label {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.75em;
+    color: #25477A;
+}
+
+.input-box input, .input-box textarea, .input-box select {
+    padding: 10px 10px;
+    width: 100%;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 5px;
+    border: 1px solid #25477A;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.input-box textarea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 80px;
+}
+
+.input-box input[type=submit]{
+    background-color: #0165fa;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.5s;
+    border: none;
+    width: 120px;
+    float: right;
+}
+
+.input-box input[type=submit]:hover {
+    background-color: #25477A;
+}
+
+/*----------------------------------------------------------------------------*/
+/*-------------------RESPONSIVO PARA A RESOLUÇÃO DE 1024px--------------------*/
+/*----------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1024px) {
+
+    #logo {
+        position: absolute;
+        left: 30px;
+    }
+
+    .nav-container ul {
+        margin-right: 40px;
+    }
+
+    .nav-container ul li {
+        position: relative;
+        float: none;
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    #search-form form {
+        width: 60%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #search-form form input, #search-form form select {
+        display: block;
+        margin: 0;
+        margin-bottom: 25px;
+        width: 100%;
+        border-width: 0;
+        padding: 10px 20px;
+        box-sizing: border-box;
+    }
+
+    #last-jobs-container.wrapper, #status-container.wrapper, #blog-container.wrapper, .wrapper {
+        max-width: 90%;
+    }
+
+    #sendjobs-container {
+        background: url('../img/bannerenviarvagas-1024px.png') no-repeat;
+    }
+    
+    .article-box {
+        width: 30.5%;
+        padding: 0 1%;
+    }
+
+    #findjobs #type-filter ul li {
+        display: inline-block;
+        width: 23%;
+        padding-left: 1%;
+    }
+    
+    .sendjobs h1 {
+        font-size: 2em;
+        margin-bottom: 2.2em;
+        text-align: center;
+    }
+    
+    .input-box {
+        width: 70%;
+    }
+    
+    .input-box input, .input-box textarea, .input-box select {
+        font-size: 0.8em;
+    }
+}
+
+/*------------------------------------------------------------------------------------------------*/
+/*------------------------------RESPONSIVO PARA A RESOLUÇÃO DE 768px------------------------------*/
+/*------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 768px){
+    
+    #last-jobs-container.wrapper, .wrapper {
+        max-width: 90%;
+    }
+    
+    .company-box {
+        width: 50%;
+        padding-left: 1em;
+    }
+
+    .company-box .company-info {
+        margin-top: 1em;
+        font-size: 0.9em;
+    }
+
+    .locality i, .locality p, .job-type span {
+        font-size: 0.8em;
+    }
+
+    .locality img {
+        width: 0.6em;
+    }
+
+    .job-type {
+        width: 20%;
+        right: 1em;
+    }
+
+    #sendjobs-container {
+        background: url('../img/bannerenviarvagas-768px.png') no-repeat;
+        background-size: cover;
+        padding: 6em 0 26em 0;
+    }
+
+    #sendjobs-inner {
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #sendjobs-inner h2, #sendjobs-inner p {
+        width: 100%;
+        color: #ffffff;
+    }
+
+    .status-box {
+        width: 49.5%;
+        height: 80px;
+        border: none;
+    }
+
+    .status-box:nth-child(2), .status-box:nth-child(4) {
+        border-left: 1px solid #cccccc;
+        margin-top: 50px;
+    }
+
+    .testmony-box {
+        width: 49.5%;
+    }
+
+    #testmony-container .testmony-name {
+        margin-bottom: 20px;
+    }
+
+
+    .article-box {
+        width: 94%;
+        display: block;
+        padding: 0;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 4em;
+    }
+
+    .article-box:last-child {
+        margin-bottom: 0;
+    }
+    
+    #findjobs #type-filter ul li {
+        display: inline-block;
+        width: 22%;
+        padding-left: 1%;
+    }
+
+    .input-box {
+        width: 80%;
+    }
+}
+
+/*------------------------------------------------------------------------------------------------*/
+/*------------------------------RESPONSIVO PARA A RESOLUÇÃO DE 576px------------------------------*/
+/*------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 576px){
+    
+    .nav-container .iconify {
+        display: block !important;
+    }
+
+    html, body {
+        overflow-x: hidden;
+    }
+
+    nav {
+        height: 4.5em;
+    }
+
+    #logo {
+        left: 0;
+        height: 2em;
+    }
+
+    .iconify {
+        display: block;
+        position: absolute;
+        right: 0.9em;
+        top: 0.6em;
+    }
+
+    .nav-container ul {
+        width: 100%;
+        margin: 0;
+        position: relative;
+        top: 4.55em;
+        height: 3em;
+        line-height: 3em;
+        display: none;
+    }
+
+    .nav-container ul li {
+        width: 100%;
+        display: block;
+        background-color: #25477A;
+        margin: 0;
+        border-bottom: 1px solid #ffffff;
+        text-align: center;
+    }
+
+    .nav-container ul li a {
+        font-size: 1em;
+    }
+
+    .open {
+        display: block !important;
+    }
+
+    #main-banner {
+        margin-top: 4.5em;
+    }
+
+    #search-form {
+        padding-top: 14em;
+        padding-bottom: 8em;
+        width: 80%;
+    }
+
+    #search-form h1 {
+        font-size: 2em;
+    }
+
+    #search-form p {
+        font-size: 1em;
+        margin-bottom: 2.4em;
+    }
+
+    #search-form form {
+        width: 80%;
+    }
+
+    #search-form form input[type=submit] {
+        margin-bottom: 0;
+    }
+
+    #last-jobs-container.wrapper, .wrapper {
+        max-width: 86%;
+    }
+
+    #lastjobs-container {
+        padding: 5em 0;
+    }
+
+    #lastjobs-container h1 {
+        font-size: 2em;
+    }
+
+    .locality {
+        display: none;
+    }
+
+    .company-box .company-info {
+        margin-top: 1em;
+        margin-left: 1.5em;
+        width: 10em;
+    }
+
+    .company-box .company-info h3 {
+        font-size: 1em;
+    }
+
+    #sendjobs-container {
+        background: url('../img/bannerenviarvagas-576px.png') no-repeat;
+        background-size: cover;
+        padding: 6em 0 20em 0;
+    }
+
+    #sendjobs-container h2 {
+        font-size: 1.8em;
+    }
+
+    #sendjobs-container p {
+        font-size: 1em;
+    }
+
+    #status-container h2 {
+        font-size: 1.8em;
+    }
+
+    #status-container p {
+        font-size: 1em;
+    }
+
+    .status-box {
+        margin-top: 2em;
+        width: 100%;
+    }
+
+    .status-text {
+        font-size: 1em;
+    }
+
+    .status-qtd {
+        font-size: 3em;
+    }
+
+    .status-box:nth-child(2), .status-box:nth-child(4) {
+        border: none;
+    }
+
+    #testmony-container {
+        padding: 5em 0;
+    }
+
+    #testmony-container h2 {
+        margin-bottom: 1em;
+        font-size: 1.8em;
+    }
+
+    #testmony-container p {
+        margin-bottom: 1em;
+        font-size: 1em;
+    }
+
+    .testmony-box {
+        width: 100%;
+    }
+
+    #testmony-container .testmony-box .testmony-msg {
+        font-size: 1em;
+    }
+
+    #blog-container h2 {
+        margin-bottom: 1em;
+        font-size: 1.8em;
+    }
+
+    #blog-container p {
+        margin-bottom: 1em;
+        font-size: 1em;
+    }
+
+    .article-box h4 {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    .footer-box {
+        display: block;
+        width: 100%;
+    }
+
+    .articles-footer, .company-footer{
+        width: 100%;
+    }
+
+    #findjobs #type-filter ul li {
+        display: block;
+        width: 98%;
+        padding-left: 2%;
+        border-top: 1px solid #25477A;
+    }
+
+    #findjobs #type-filter ul li:first-child {
+        border-top: none;
+    }
+
+    .input-box {
+        width: 90%;
+    }
+}
