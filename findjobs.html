@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>AkiVagas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container" id="findjobs">
+        <!--HEADER-->
+        <header>
+            <!--NAVBAR-->
+            <nav>
+                <div class="nav-container">
+                    <a href="index.html"><img id="logo" src="img/logo1.png" alt="AkiVagas"></a>
+                    <span class="iconify" data-icon="majesticons:menu" style="color: white; font-size: 2em;"></span>
+                    <ul>
+                        <li><a href="findjobs.html">Encontrar Vaga</a></li>
+                        <li><a href="sendjobs.html">Enviar Vaga</a></li>
+                        <li><a href="contact.html">Contato</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!--BUSCAR VAGAS-->
+        <main id="lastjobs-container" class="wrapper">
+            <h1 id="buscarvagas-h1">BUSQUE UMA VAGA</h1>
+            <div id="jobs-filter">
+                <div id="search-form">
+                    <form>
+                        <input type="text" name="job" placeholder="Digite o cargo">
+                        <select name="region">
+                            <option value="">Todos os estados</option>
+                        </select>
+                        <select name="category">
+                            <option value="">Categorias</option>
+                        </select>
+                        <input type="submit" value="Pesquisar">
+                    </form>
+                </div>
+            </div>
+            <div id="type-filter">
+                <ul>
+                    <li>
+                        <input type="checkbox" checked><label>CLT</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked><label>PJ</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked><label>Home Office</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked><label>Freelancer</label>
+                    </li>
+                </ul>
+            </div>
+            <ul>
+                <li>
+                    <a href="#" class="clickarea">
+                        <div class="company-box">
+                            <img src="img/googlelogo.png" alt="Google">
+                            <div class="company-info">
+                                <h3>Developer</h3>
+                                <p>Google</p>
+                            </div>
+                        </div>
+                        <div class="locality">
+                            <img src="img/location.png">
+                            <p>Mountain View, California</p>
+                        </div>
+                        <div class="job-type">
+                            <span class="clt">CLT</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="clickarea">
+                        <div class="company-box">
+                            <img src="img/ibmlogo.png" alt="IBM">
+                            <div class="company-info">
+                                <h3>DBA</h3>
+                                <p>IBM</p>
+                            </div>
+                        </div>
+                        <div class="locality">
+                            <img src="img/location.png">
+                            <p>Armonk, New York</p>
+                        </div>
+                        <div class="job-type">
+                            <span class="pj">PJ</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="clickarea">
+                        <div class="company-box">
+                            <img src="img/linkedinlogo.png" alt="Linkedin">
+                            <div class="company-info">
+                                <h3>Front-End Developer</h3>
+                                <p>Linkedin</p>
+                            </div>
+                        </div>
+                        <div class="locality">
+                            <img src="img/location.png">
+                            <p>Sunnyvale, California</p>
+                        </div>
+                        <div class="job-type">
+                            <span class="homeoffice">Home Office</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="clickarea">
+                        <div class="company-box">
+                            <img src="img/facebooklogo.png" alt="Facebook">
+                            <div class="company-info">
+                                <h3>Full Stack Developer</h3>
+                                <p>Facebook</p>
+                            </div>
+                        </div>
+                        <div class="locality">
+                            <img src="img/location.png">
+                            <p>Menlo Park, California</p>
+                        </div>
+                        <div class="job-type">
+                            <span class="pj">PJ</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="btnjobs-container">
+                <a href="#" class="btn-jobs">Carregar mais vagas</a>
+            </div>
+        </main>
+        <!--RODAPÉ-->
+        <footer>
+            <div class="wrapper">
+                <div class="footer-box">
+                    <div class="company-footer">
+                        <img src="img/logo2.png" alt="Logo">
+                        <p>O lugar certo para encontrar o seu novo emprego</p>
+                    </div>
+                </div> 
+                <div class="footer-box">
+                    <div class="articles-footer">
+                        <h2>Artigos recentes</h2>
+                        <ul class="footer-list footer-article-list">
+                            <li>
+                                <a href="#">Como conseguir o primeiro emprego em tempos de crise?</a>
+                                <span class="article-date">10 de Janeiro de 2022</span>
+                            </li>
+                            <li>
+                                <a href="#">Dia a dia no trabalho: dicas para se manter motivado e produtivo</a>
+                                <span class="article-date">02 de Janeiro de 2022</span>
+                            </li>
+                            <li>
+                                <a href="#">O dilema das reuniões: como se posicionar de forma confiante?</a>
+                                <span class="article-date">29 de Dezembro de 2022</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>  
+                <div class="footer-box">
+                    <h2>Nossas redes sociais</h2>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="#">
+                                <img src="img/iconefacebook.png" alt="Ícone do facebook" class="footer-img">
+                                <span>Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/iconeinstagram.png" alt="Ícone do Instagram" class="footer-img">
+                                <span>Instagram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/iconelinkedin.png" alt="Ícone do Linkedin" class="footer-img">
+                                <span>Linkedin</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div> 
+            </div>
+            <div class="footer-bottom">
+                 <div class="wrapper">
+                    <p>Desenvolvido por José Ferreira (2022)</p>
+                 </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+</body>
+</html>
