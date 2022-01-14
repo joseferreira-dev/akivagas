@@ -1088,6 +1088,10 @@ footer .wrapper:after {
         font-size: 1.5em;
         margin-bottom: 15px;
     }
+	
+    .article-resume p {
+	margim-bottom: 2em;
+    }
 
     .footer-box {
         display: block;
