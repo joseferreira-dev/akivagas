@@ -1089,7 +1089,7 @@ footer .wrapper:after {
         margin-bottom: 15px;
     }
 	
-    .article-resume p {
+    #blog-container .article-resume p {
 	margin-bottom: 2em;
     }
 
