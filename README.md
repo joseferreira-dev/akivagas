@@ -11,4 +11,4 @@ Link: [AkiVagas](https://joseferreira-dev.github.io/akivagas/index.html)
 
 ## Imagens do site em diferentes tamanhos de tela
 Largura das telas de exemplo: 1920px, 1440px, 1024px, 768px, 576px e 425px
-![screen](/img/telas.png)
+![screen](/img/telas-responsividade.png)
